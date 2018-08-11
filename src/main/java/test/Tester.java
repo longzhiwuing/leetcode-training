@@ -1,5 +1,8 @@
 package test;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * Created with IntelliJ IDEA.
  *
@@ -16,7 +19,7 @@ public class Tester {
 //        System.out.println(10 % 10);
 
 
-        User user = new User();
+        /*User user = new User();
         user.setName("aaa");
         System.out.println("user = " + user);
         demo(user);
@@ -24,7 +27,17 @@ public class Tester {
         int i=100;
         System.out.println("i = " + i);
         demo2(i);
-        System.out.println("i = " + i);
+        System.out.println("i = " + i);*/
+
+        Set<String> set = new HashSet<String>();
+
+        boolean a = set.add("a");
+        boolean b = set.add("b");
+        boolean c = set.add("a");
+
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+        System.out.println("c = " + c);
     }
 
     private static void demo2(int i) {
